@@ -1,0 +1,58 @@
+.toolbar{
+    width: 100%;
+    position: fixed;
+    background: blue;
+    height: 56px;
+    top: 0;
+    left: 0;;
+    
+}
+a{
+    color: red;
+}
+.toolbar_navegation{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    
+}
+.spacer{
+    flex: 1;
+}
+.toolbar_navegation-itens a{
+    text-decoration: none;
+
+} 
+.toolbar_navegation-itens ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+} 
+.toolbar_navegation-itens li{
+    padding: 0 0.5rem;
+
+} 
+.toolbar_navegation-itens a:hover,
+.toolbar_navegation-itens a:active
+{
+    color: orange;
+
+} 
+.toolbar_logo a{
+    font-size: 1.5rem;
+
+} 
+@media(max-width: 768px){
+    .toolbar_navegation-itens{
+    display: none;
+    }
+}
+
+@media (min-width: 769px){
+    .toolbar_toggle-button{
+        display: none;
+    }
+}
